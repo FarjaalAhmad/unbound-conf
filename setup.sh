@@ -10,3 +10,4 @@ systemctl enable unbound
 systemctl start unbound
 clear
 echo "Done"
+echo "Test yourself now by Executing: dig google.com"
