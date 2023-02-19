@@ -1,4 +1,5 @@
 sudo rm -f /etc/unbound/unbound.conf
+sudo apt install unbound -y
 sudo wget https://raw.githubusercontent.com/FarjaalAhmad/unbound-conf/main/unbound.conf -O /etc/unbound/unbound.conf
 echo "127.0.0.1:5335" > ~/resolvers.txt
 sudo -u root sh -c 'echo "net.core.rmem_max=1048576" >> /etc/sysctl.conf'
